@@ -3,10 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-square',
   template: `
-    <p>
-      square works!
-      {{value}}
-    </p>
+  {{value}}
   `,
   styles: [
   ]

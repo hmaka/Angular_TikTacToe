@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoardComponent implements OnInit{
   squares: any[] = [];
-  xIsNext: boolean = true;
-  winner: string = "";
+  xIsNext!: boolean;
+  winner!: string;
 
   constructor(){}
 
-  ngOnInit(): void {
+  ngOnInit() {
       this.newGame();
   }
 
@@ -22,7 +22,7 @@ export class BoardComponent implements OnInit{
     this.xIsNext = true;
 
   }
-
+  
   get player(){
     return this.xIsNext ? 'X' : 'O';
   }
@@ -61,6 +61,3 @@ export class BoardComponent implements OnInit{
   }
 
 }
-
-
-
